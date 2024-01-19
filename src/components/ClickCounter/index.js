@@ -2,12 +2,12 @@
 import {Component} from "react" 
 
 class ClickCounter extends Component {
-    state = {conut : 0}
+    state = {count : 0}
     onIncrement = () => {
         this.setState((prevState)=> ({prevState.count + 1}))
     }
     render () {
-        const {conut} = this.state
+        const {count} = this.state
         return (
             <div className="card-container">
                 <h1 className="heading">The Button has been Clicked <span>{count}</span>times</h1>
